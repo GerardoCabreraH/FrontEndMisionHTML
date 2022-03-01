@@ -56,6 +56,12 @@ textarea {
     resize: none;
 }
 
+/*Contacto*/
+.icon {
+    font-size: 24px;
+    color: #fc6344;
+}
+
 .footer {
     background-color: #fc6344;
     color: #ffffff;
