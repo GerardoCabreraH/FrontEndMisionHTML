@@ -5,126 +5,303 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pasteleria Monterrollo</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/all.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <header>
-            <nav class="navbar">
-                <ul class="menu-responsive">
-                    <li>Menu</li>
-                </ul>
-                <ul class="menu">
-                    <li>Inicio</li>
-                    <li>Sobre nosotros</li>
-                    <li>Precios</li>
-                    <li>Pedido</li>
-                    <li>Contacto</li>
-                </ul>
+        <header id="navbar" class="navbarWeb fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a id="navbarBrand" class="navbar-brand" href="#"><img src="assets/img/Pastelería Monterrollo-Logo.png" alt="logo-monterrollo" class="img-fluid img-navbar"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Precios
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Sabores</a>
+                                    <a class="dropdown-item" href="#">Adornos</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pedido</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main>
             <section class="hero"></section>
-            <section class="container section">
-                <h2 class="text-center">Sobre nosotros</h2>
-                <div class="row">
-                    <div class="one-column">
-                        <div class="row">
-                            <div class="two-columns">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                            <div class="two-columns">
-                                <img src="assets/img/Pastelería Monterrollo-Logo.png" alt="logo-monterrollo" class="img-fluid img-about">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="container section">
-                <h2 class="text-center">Precios</h2>
-                <div class="row">
-                    <div class="one-column">
-                        <div class="row">
-                            <div class="two-columns">
-                                <h3 class="text-center">Lista de sabores</h3>
-                            </div>
-                            <div class="two-columns">
-                                <h3 class="text-center">Lista de adornos</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="container section">
-                <h2 class="text-center">Realiza tu pedido</h2>
-                <form>
+            <section class="section-light">
+                <div class="container">
                     <div class="row">
-                        <div class="two-columns">
-                            <h3 class="text-center">Datos personales</h3>
-                            <div class="form-group">
-                                <label for="name">Nombre completo</label>
-                                <input type="text" name="name" id="name" placeholder="Nombre" class="form-control">
+                        <div class="col-12 col-sm-12">
+                            <h2 class="text-center">Sobre nosotros</h2>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12 col-sm-6 d-flex flex-column justify-content-center">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="subject" placeholder="Email" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="msg">Telefono</label>
-                                <textarea id="msg" name="msg" id="msg" cols="30" rows="10" placeholder="Mensaje" class="form-control"></textarea>
+                            <div class="col-12 col-sm-6 d-flex flex-column justify-content-center">
+                                <div class="card border border-dark">
+                                    <div class="card-body">
+                                        <img src="assets/img/Pastelería Monterrollo-Logo.png" alt="logo-monterrollo" class="img-fluid img-about">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="two-columns">
-                            <h3 class="text-center">Detalles del pedido</h3>
-                            <div class="form-group">
-                                <label for="name">Nombre completo</label>
-                                <input type="text" name="name" id="name" placeholder="Nombre" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Sujeto</label>
-                                <input type="text" name="subject" id="subject" placeholder="Sujeto" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="msg">Mensaje</label>
-                                <textarea id="msg" name="msg" id="msg" cols="30" rows="10" placeholder="Mensaje" class="form-control"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="one-column">
-                            <div class="form-group">
-                                <button type="button" class="btn btn-success">Enviar</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </section>
-            <section class="container section">
-                <h2 class="text-center">Contacta con nosotros</h2>
-                <div class="row">
-                    <div class="one-column">
-                        <p>Puedes enviarnos un mensaje y con gusto lo responderemos.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="one-column">
-                        <form>
-                            <div class="form-group">
-                                <label for="name">Nombre completo</label>
-                                <input type="text" name="name" id="name" placeholder="Nombre" class="form-control">
+            </section>
+            <section class="section-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12">
+                            <h2 class="text-center">Precios</h2>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 mt-5">
+                                    <h3 class="text-center">Lista de sabores</h3>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="subject">Sujeto</label>
-                                <input type="text" name="subject" id="subject" placeholder="Sujeto" class="form-control">
+                            <div class="row mt-5">
+                                <div class="col-12 col-sm-3">
+                                    <div class="card card-sabores h-100">
+                                        <img src="assets/img/5a1c82c9164b70.9215493915118179290913.png"
+                                            class="card-img-top img-fluid img-card border-bottom border-dark" alt="sabor-pastel">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Vanilla</h5>
+                                            <p class="card-text"><span><i class="fas fa-dollar-sign"></i></span> Precio: $30.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="card card-sabores h-100">
+                                        <img src="assets/img/5a1c82c9164b70.9215493915118179290913.png" class="card-img-top img-fluid img-card border-bottom border-dark"
+                                            alt="sabor-pastel">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Chocolate</h5>
+                                            <p class="card-text"><span><i class="fas fa-dollar-sign"></i></span> Precio: $30.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="card card-sabores h-100">
+                                        <img src="assets/img/5a1c82c9164b70.9215493915118179290913.png" class="card-img-top img-fluid img-card border-bottom border-dark"
+                                            alt="sabor-pastel">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Fresa</h5>
+                                            <p class="card-text"><span><i class="fas fa-dollar-sign"></i></span> Precio: $30.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="card card-sabores h-100">
+                                        <img src="assets/img/5a1c82c9164b70.9215493915118179290913.png" class="card-img-top img-fluid img-card border-bottom border-dark"
+                                            alt="sabor-pastel">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Limon</h5>
+                                            <p class="card-text"><span><i class="fas fa-dollar-sign"></i></span> Precio: $30.00</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="msg">Mensaje</label>
-                                <textarea id="msg" name="msg" id="msg" cols="30" rows="10" placeholder="Mensaje"
-                                    class="form-control"></textarea>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 mt-5">
+                                    <h3 class="text-center">Lista de adornos</h3>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <button type="button" class="btn btn-success">Enviar</button>
+                            <div class="row mt-5">
+                                <div class="col-12 col-sm-3">
+                                    <div class="card card-sabores h-100">
+                                        <img src="assets/img/5a1c82c9164b70.9215493915118179290913.png"
+                                            class="card-img-top img-fluid img-card border-bottom border-dark" alt="sabor-pastel">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Trozos de de chocolate</h5>
+                                            <p class="card-text"><span><i class="fas fa-dollar-sign"></i></span> Precio: $30.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="card card-sabores h-100">
+                                        <img src="assets/img/5a1c82c9164b70.9215493915118179290913.png"
+                                            class="card-img-top img-fluid img-card border-bottom border-dark" alt="sabor-pastel">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Trozos de mango</h5>
+                                            <p class="card-text"><span><i class="fas fa-dollar-sign"></i></span> Precio: $30.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="card card-sabores h-100">
+                                        <img src="assets/img/5a1c82c9164b70.9215493915118179290913.png"
+                                            class="card-img-top img-fluid img-card border-bottom border-dark" alt="sabor-pastel">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Trozos de Fresa</h5>
+                                            <p class="card-text"><span><i class="fas fa-dollar-sign"></i></span> Precio: $30.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="card card-sabores h-100">
+                                        <img src="assets/img/5a1c82c9164b70.9215493915118179290913.png"
+                                            class="card-img-top img-fluid img-card border-bottom border-dark" alt="sabor-pastel">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Trozos de durazno</h5>
+                                            <p class="card-text"><span><i class="fas fa-dollar-sign"></i></span> Precio: $30.00</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12">
+                            <h2 class="text-center">Realiza tu pedido</h2>
+                        </div>
+                        <div class="col-12 col-sm-12 mt-5">
+                            <form>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12">
+                                        <h3 class="text-center">Datos personales</h3>
+                                    </div>
+                                    <div class="col-12 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="name">Nombre completo</label>
+                                            <input type="text" name="name" id="name" placeholder="Nombre" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phone">Telefono</label>
+                                            <input type="phone" name="phone" id="phone" placeholder="Telefono" maxlength="10" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12">
+                                        <h3 class="text-center">Detalles del pedido</h3>
+                                    </div>
+                                    <div class="col-12 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="name">Sabores</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="flavors" name="flavors[]" type="checkbox" id="vanillaCheckbox" value="25.00" onclick="totalIt()">
+                                                <label class="form-check-label" for="vanillaCheckbox">Vanilla</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="flavors" name="flavors[]" type="checkbox" id="chocolateCheckbox" value="25.00" onclick="totalIt()">
+                                                <label class="form-check-label" for="chocolateCheckbox">Chocolate</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="flavors" name="flavors[]" type="checkbox" id="fresaCheckbox" value="25.00" onclick="totalIt()">
+                                                <label class="form-check-label" for="fresaCheckbox">Fresa</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="flavors" name="flavors[]" type="checkbox" id="limonCheckbox" value="25.00" onclick="totalIt()">
+                                                <label class="form-check-label" for="limonCheckbox">Limon</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="subject">Adornos</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="cake_toppers" name="cake_toppers[]" type="checkbox" id="trozosChocolateCheckbox" value="25.00" onclick="totalIt()">
+                                                <label class="form-check-label" for="trozosChocolateCheckbox">Trozos de de chocolate</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="cake_toppers" name="cake_toppers[]" type="checkbox" id="trozosMangoCheckbox" value="25.00" onclick="totalIt()">
+                                                <label class="form-check-label" for="trozosMangoCheckbox">Trozos de mango</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="cake_toppers" name="cake_toppers[]" type="checkbox" id="trozosFresaCheckbox" value="25.00" onclick="totalIt()">
+                                                <label class="form-check-label" for="trozosFresaCheckbox">Trozos de fresa</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="cake_toppers" name="cake_toppers[]" type="checkbox" id="trozosDuraznoCheckbox" value="25.00" onclick="totalIt()">
+                                                <label class="form-check-label" for="trozosDuraznoCheckbox">Trozos de durazno</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="description">Descripción del pedido</label>
+                                            <textarea id="description" name="description" id="description" rows="5" placeholder="Descripción"
+                                                class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="total">Total del pedido</label>
+                                            <input type="total" name="total" id="total" placeholder="Total" class="form-control" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12">
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-success btn-block">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12">
+                            <h2 class="text-center">Contacta con nosotros</h2>
+                        </div>
+                        <div class="col-12 col-sm-12 mt-5">
+                            <p>Puedes enviarnos un mensaje y con gusto lo responderemos.</p>
+                        </div>
+                        <div class="col-12 col-sm-12 mt-5">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Nombre completo</label>
+                                    <input type="text" name="name" id="name" placeholder="Nombre" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Sujeto</label>
+                                    <input type="subject" name="subject" id="subject" placeholder="Sujeto" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="msg">Mensaje</label>
+                                    <textarea id="msg" name="msg" id="msg" rows="5" placeholder="Mensaje" class="form-control"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-success btn-block">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -132,5 +309,8 @@
         <footer class="footer">
             <p>2021 Pasteleria Monterrollo</p>
         </footer>
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
