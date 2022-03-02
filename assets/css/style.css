@@ -7,6 +7,13 @@
 body {
     text-align: justify;
 }
+.wrapper {
+    height: 100%;
+    margin:0;
+    padding-right:250px;
+    position: relative;
+    overflow: hidden;
+}
  
 /*Barra navegadora*/
 .img-navbar {
@@ -15,6 +22,48 @@ body {
 }
 .navbarWeb {
     background-color: #FCE6E2;
+}
+.navbarAdmin {
+    background-color: #FCE6E2;
+    width: 80%;
+    float: right;
+    height: 60px;
+}
+#navbarBrand {
+    display: none;
+}
+
+/*Sidebar*/
+.img-sidebar {
+    width: 50px;
+    height: 50px;
+}
+.sidebarAdmin {
+    background-color: #fcaca4;
+    color: #ffffff;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    float: left;
+}
+.sidebarAdmin ul {
+    list-style-type: none;
+}
+.sidebarAdmin li a {
+    color: #ffffff;
+}
+.sidebarLogo {
+    border-bottom: #fc6344 1px solid;
+    width: 100%;
+    padding: 20px 0;
+}
+.sidebarContent {
+    width: 100%;
+    padding: 20px;
 }
 
 /*Inicio*/
@@ -29,17 +78,31 @@ body {
 
 /*Secciones*/
 .section-light {
-    padding: 100px 0;
+    padding: 50px 15px;
 }
 .section-dark {
-    padding: 100px 0;
+    padding: 100px 20px;
     background-color: #ffcccc;
+}
+.content {
+    width: 80%;
+    float: right;
+    position: relative;
 }
 
 /*About*/
 .img-about {
     width: 500px;
     height: 500px;
+}
+
+/*Dashboard*/
+.icon-dashboard {
+    font-size: 24px;
+    color: #ffffff;
+}
+#pedidos.table {
+    width: 100%;
 }
 
 /*Pedidos*/
@@ -62,6 +125,7 @@ textarea {
     color: #fc6344;
 }
 
+/*Footer*/
 .footer {
     background-color: #fc6344;
     color: #ffffff;
@@ -70,7 +134,50 @@ textarea {
 }
 
 @media only screen and (max-width: 768px){
+    #navbarBrand {
+        display: block;
+    }
     .hero {
         height: 400px;
+    }
+    .sidebarAdmin {
+        display: none;
+        width: 100%;
+        float: left;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        top: 60px;
+    }
+    .navbarAdmin {
+        width: 100%;
+        float: left;
+    }
+    .content {
+        width: 100%;
+        float: left;
+    }
+    #pedidos.table thead {
+        display: none;
+    }
+    #pedidos.table, #pedidos.table tbody, #pedidos.table tr, #pedidos.table td {
+        display: block;
+        width: 100%;
+        border: none;
+    }
+    #pedidos.table tr {
+        margin-bottom: 15px;
+        border: 1px #000 solid;
+    }
+    #pedidos.table td {
+        text-align: center;
+        position: relative;
+    }
+    #pedidos.table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        font-weight: bold;
     }
 }
