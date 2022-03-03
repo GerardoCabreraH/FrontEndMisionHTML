@@ -217,6 +217,9 @@ textarea {
         text-align: center;
         position: relative;
     }
+    #tablaDashboard.table td a {
+        display: block;
+    }
     #tablaDashboard.table td::before {
         content: attr(data-label);
         position: absolute;
