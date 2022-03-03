@@ -15,7 +15,7 @@
     <header id="menu">
         <nav class="navbar navbar-expand-lg navbar-light navbarAdmin">
             <div class="container">
-                <button type="button" id="navbarBrand" class="navbar-brand btn btn-link" onclick="showSidebar()"><i
+                <button type="button" id="navbarBrandAdmin" class="navbar-brand btn btn-link" onclick="showSidebar()"><i
                         class="fas fa-cogs"></i></button>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,92 +80,95 @@
                     <div class="col-12 col-sm-12">
                         <h1 class="text-center">Editar pedido</h1>
                     </div>
-                    <div class="col-12 col-sm-12">
+                    <div class="col-12 col-sm-12 mt-5">
                         <div class="card shadow">
                             <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 col-sm-6">
-                                        <h3 class="text-center">Datos personales</h3>
-                                        <div class="form-group">
-                                            <label for="name">Nombre completo</label>
-                                            <input type="text" name="name" id="name" placeholder="Nombre" class="form-control"
-                                                value="Gerardo Rafael Cabrera Herrera">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <h2 class="text-center">Datos personales</h2>
+                                            <div class="form-group">
+                                                <label for="name">Nombre completo</label>
+                                                <input type="text" name="name" id="name" placeholder="Nombre" class="form-control"
+                                                    value="Gerardo Rafael Cabrera Herrera">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Email</label>
+                                                <input type="email" name="email" id="email" placeholder="Email" class="form-control"
+                                                    value="gera_cabrera@correo.com">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="phone">Telefono</label>
+                                                <input type="phone" name="phone" id="phone" placeholder="Telefono" maxlength="10" class="form-control"
+                                                    value="8183912893">
+                                            </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="email">Email</label>
-                                            <input type="email" name="email" id="email" placeholder="Email" class="form-control"
-                                                value="gera_cabrera@correo.com">
+                                        <div class="col-12 col-sm-6">
+                                            <h2 class="text-center">Detalles del pedido</h2>
+                                            <div class="form-group">
+                                                <label for="name">Sabores</label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="flavors" name="flavors[]" type="checkbox" id="vanillaCheckbox"
+                                                        value="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="vanillaCheckbox">Vanilla</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="flavors" name="flavors[]" type="checkbox" id="chocolateCheckbox"
+                                                        value="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="chocolateCheckbox">Chocolate</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="flavors" name="flavors[]" type="checkbox" id="fresaCheckbox"
+                                                        value="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="fresaCheckbox">Fresa</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="flavors" name="flavors[]" type="checkbox" id="limonCheckbox"
+                                                        value="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="limonCheckbox">Limon</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="subject">Adornos</label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="cake_toppers" name="cake_toppers[]" type="checkbox"
+                                                        id="trozosChocolateCheckbox" value="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="trozosChocolateCheckbox">Trozos de de chocolate</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="cake_toppers" name="cake_toppers[]" type="checkbox"
+                                                        id="trozosMangoCheckbox" value="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="trozosMangoCheckbox">Trozos de mango</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="cake_toppers" name="cake_toppers[]" type="checkbox"
+                                                        id="trozosFresaCheckbox" value="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="trozosFresaCheckbox">Trozos de fresa</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="cake_toppers" name="cake_toppers[]" type="checkbox"
+                                                        id="trozosDuraznoCheckbox" value="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="trozosDuraznoCheckbox">Trozos de durazno</label>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="phone">Telefono</label>
-                                            <input type="phone" name="phone" id="phone" placeholder="Telefono" maxlength="10" class="form-control"
-                                                value="8183912893">
+                                        <div class="col-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label for="description">Descripción del pedido</label>
+                                                <textarea id="description" name="description" id="description" rows="5" placeholder="Descripción"
+                                                    class="form-control">Descripción del pedido del pastel</textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="total">Total del pedido</label>
+                                                <input type="total" name="total" id="total" placeholder="Total" class="form-control" readonly
+                                                    value="$200.00">
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="button" class="btn btn-success btn-block">Enviar</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-6">
-                                        <h3 class="text-center">Detalles del pedido</h3>
-                                        <div class="form-group">
-                                            <label for="name">Sabores</label>
-                                            <div class="form-check">
-                                                <input class="form-check-input" id="flavors" name="flavors[]" type="checkbox" id="vanillaCheckbox"
-                                                    value="25.00" onclick="totalIt()" checked>
-                                                <label class="form-check-label" for="vanillaCheckbox">Vanilla</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" id="flavors" name="flavors[]" type="checkbox" id="chocolateCheckbox"
-                                                    value="25.00" onclick="totalIt()" checked>
-                                                <label class="form-check-label" for="chocolateCheckbox">Chocolate</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" id="flavors" name="flavors[]" type="checkbox" id="fresaCheckbox"
-                                                    value="25.00" onclick="totalIt()" checked>
-                                                <label class="form-check-label" for="fresaCheckbox">Fresa</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" id="flavors" name="flavors[]" type="checkbox" id="limonCheckbox"
-                                                    value="25.00" onclick="totalIt()" checked>
-                                                <label class="form-check-label" for="limonCheckbox">Limon</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="subject">Adornos</label>
-                                            <div class="form-check">
-                                                <input class="form-check-input" id="cake_toppers" name="cake_toppers[]" type="checkbox"
-                                                    id="trozosChocolateCheckbox" value="25.00" onclick="totalIt()" checked>
-                                                <label class="form-check-label" for="trozosChocolateCheckbox">Trozos de de chocolate</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" id="cake_toppers" name="cake_toppers[]" type="checkbox"
-                                                    id="trozosMangoCheckbox" value="25.00" onclick="totalIt()" checked>
-                                                <label class="form-check-label" for="trozosMangoCheckbox">Trozos de mango</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" id="cake_toppers" name="cake_toppers[]" type="checkbox"
-                                                    id="trozosFresaCheckbox" value="25.00" onclick="totalIt()" checked>
-                                                <label class="form-check-label" for="trozosFresaCheckbox">Trozos de fresa</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" id="cake_toppers" name="cake_toppers[]" type="checkbox"
-                                                    id="trozosDuraznoCheckbox" value="25.00" onclick="totalIt()" checked>
-                                                <label class="form-check-label" for="trozosDuraznoCheckbox">Trozos de durazno</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-12">
-                                        <div class="form-group">
-                                            <label for="description">Descripción del pedido</label>
-                                            <textarea id="description" name="description" id="description" rows="5" placeholder="Descripción"
-                                                class="form-control">Descripción del pedido del pastel</textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="total">Total del pedido</label>
-                                            <input type="total" name="total" id="total" placeholder="Total" class="form-control" readonly value="$200.00">
-                                        </div>
-                                        <div class="form-group">
-                                            <button type="button" class="btn btn-success btn-block">Enviar</button>
-                                        </div>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>

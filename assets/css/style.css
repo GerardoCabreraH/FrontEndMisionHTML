@@ -7,13 +7,6 @@
 body {
     text-align: justify;
 }
-.wrapper {
-    height: 100%;
-    margin:0;
-    padding-right:250px;
-    position: relative;
-    overflow: hidden;
-}
  
 /*Barra navegadora*/
 .img-navbar {
@@ -27,9 +20,8 @@ body {
     background-color: #FCE6E2;
     width: 80%;
     float: right;
-    height: 60px;
 }
-#navbarBrand {
+#navbarBrandAdmin {
     display: none;
 }
 
@@ -39,8 +31,7 @@ body {
     height: 50px;
 }
 .sidebarAdmin {
-    background-color: #fcaca4;
-    color: #ffffff;
+    background-color: #ffcccc;
     height: 100%;
     width: 20%;
     position: fixed;
@@ -54,7 +45,7 @@ body {
     list-style-type: none;
 }
 .sidebarAdmin li a {
-    color: #ffffff;
+    color: #000000;
 }
 .sidebarLogo {
     border-bottom: #fc6344 1px solid;
@@ -64,6 +55,15 @@ body {
 .sidebarContent {
     width: 100%;
     padding: 20px;
+}
+
+/*Login*/
+.img-login {
+    width: 100px;
+    height: 100px;
+}
+.login {
+    background-color: #ffcccc;
 }
 
 /*Inicio*/
@@ -81,7 +81,7 @@ body {
     padding: 50px 15px;
 }
 .section-dark {
-    padding: 100px 20px;
+    padding: 50px 15px;
     background-color: #ffcccc;
 }
 .content {
@@ -134,7 +134,7 @@ textarea {
 }
 
 @media only screen and (max-width: 768px){
-    #navbarBrand {
+    #navbarBrandAdmin {
         display: block;
     }
     .hero {
@@ -171,6 +171,8 @@ textarea {
     #pedidos.table td {
         text-align: center;
         position: relative;
+        display: flex;
+        flex-direction: column;
     }
     #pedidos.table td::before {
         content: attr(data-label);
