@@ -20,6 +20,7 @@ body {
     background-color: #FCE6E2;
     width: 80%;
     float: right;
+    padding: 25px 0;
 }
 #navbarBrandAdmin {
     display: none;
