@@ -1,9 +1,11 @@
 function totalIt() {
+    //miSpan.dataset.price
+    //input[i].dataset.price
     var input = document.getElementsByClassName("form-check-input");
     var total = 0;
     for (var i = 0; i < input.length; i++) {
         if (input[i].checked) {
-            total += parseFloat(input[i].value);
+            total += parseFloat(input[i].dataset.price);
         }
     }
     document.getElementsByName("total")[0].value = "$" + total.toFixed(2);
