@@ -8,7 +8,7 @@ function totalIt() {
             total += parseFloat(input[i].dataset.price);
         }
     }
-    document.getElementsByName("total")[0].value = "$" + total.toFixed(2);
+    document.getElementsByName("total")[0].value = total.toFixed(2);
 }
 
 function showSidebar() {
