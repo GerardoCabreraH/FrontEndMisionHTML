@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastelería Monterrollo | Registrar nuevo producto</title>
+    <title>Pasteleria Monterrollo | Gestión de usuarios</title>
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/css/all.min.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
@@ -79,52 +79,69 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12">
-                        <h1 class="text-center">Registrar nuevo producto</h1>
+                        <h1 class="text-center">Gestión de usuarios</h1>
                     </div>
-                    <div class="col-12 col-sm-12 mt-5">
-                        <div class="card shadow">
-                            <div class="card-body">
-                                <form>
-                                    <div class="row">
-                                        <div class="col-12 col-sm-12">
-                                            <div class="form-group">
-                                                <label for="image" class="ml-2">Imagen del producto</label>
-                                                <div class="drop-zone">
-                                                    <span class="drop-zone__prompt">Arrastra el archivo o haz click para subirlo</span>
-                                                    <input type="file" id="image" name="image" class="form-control drop-zone__input" style="display: none;">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="name">Nombre</label>
-                                                <input type="text" name="name" id="name" placeholder="Nombre" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="role">Tipo de producto</label>
-                                                <select class="form-control" type="text" id="role" name="role">
-                                                    <option value="">Seleccionar tipo de producto</option>
-                                                    <option value="Sabor">Sabor</option>
-                                                    <option value="Adorno">Adorno</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="price">Precio</label>
-                                                <input type="text" name="price" id="price" placeholder="Precio" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="description">Descripción del producto</label>
-                                                <textarea id="description" name="description" id="description" rows="5" placeholder="Descripción" class="form-control"></textarea>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="stock">Existencias</label>
-                                                <input type="text" name="stock" id="stock" placeholder="Existencias" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <a class="btn btn-primary btn-block" href="../../admin/productos/index.html">Regresar</a>
-                                                <button type="button" class="btn btn-success btn-block">Guardar</button>
-                                            </div>
-                                        </div>
+                    <div class="col-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-12 col-sm-12">
+                                <div class="card text-white bg-success mb-3 h-100 shadow">
+                                    <div class="card-body text-center">
+                                        <p><span class="icon-dashboard"><i class="fas fa-user"></i></i></span></p>
+                                        <p>1 Usuarios</p>
                                     </div>
-                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="usuarios" class="section-light">
+            <div class="container">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 col-sm-12">
+                                <h2 class="text-center">Lista de usuarios</h2>
+                                <a href="../../admin/usuarios/create.html" class="btn btn-success btn-block">Crear</a>
+                            </div>
+                            <div class="col-12 col-sm-12 mt-5">
+                                <table id="tablaDashboard" class="table table-hover text-nowrap table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Código</th>
+                                            <th>Nombre</th>
+                                            <th>Rol</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Código">
+                                                <p class="mt-2">U00122</p>
+                                            </td>
+                                            <td data-label="Nombre del cliente">
+                                                <p class="mt-2">Admin</p>
+                                            </td>
+                                            <td data-label="Total">
+                                                <p class="mt-2">Administrador</p>
+                                            </td>
+                                            <td data-label="Acciones">
+                                                <div class="form-group d-flex align-items-sm-center flex-sm-row flex-column mt-2">
+                                                    <div class="p-1">
+                                                        <a class="btn btn-primary" href="../../admin/usuarios/show.html">Ver</a>
+                                                    </div>
+                                                    <div class="p-1">
+                                                        <a class="btn btn-warning" href="../../admin/usuarios/edit.html">Editar</a>
+                                                    </div>
+                                                    <div class="p-1">
+                                                        <a class="btn btn-danger" href="#">Eliminar</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>

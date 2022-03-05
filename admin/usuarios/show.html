@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastelería Monterrollo | Registrar nuevo producto</title>
+    <title>Pastelería Monterrollo | Informacion del usuario</title>
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/css/all.min.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
@@ -79,52 +79,37 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12">
-                        <h1 class="text-center">Registrar nuevo producto</h1>
+                        <h1 class="text-center">Informacion del usuario Admin</h1>
                     </div>
                     <div class="col-12 col-sm-12 mt-5">
                         <div class="card shadow">
                             <div class="card-body">
-                                <form>
-                                    <div class="row">
-                                        <div class="col-12 col-sm-12">
-                                            <div class="form-group">
-                                                <label for="image" class="ml-2">Imagen del producto</label>
-                                                <div class="drop-zone">
-                                                    <span class="drop-zone__prompt">Arrastra el archivo o haz click para subirlo</span>
-                                                    <input type="file" id="image" name="image" class="form-control drop-zone__input" style="display: none;">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="name">Nombre</label>
-                                                <input type="text" name="name" id="name" placeholder="Nombre" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="role">Tipo de producto</label>
-                                                <select class="form-control" type="text" id="role" name="role">
-                                                    <option value="">Seleccionar tipo de producto</option>
-                                                    <option value="Sabor">Sabor</option>
-                                                    <option value="Adorno">Adorno</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="price">Precio</label>
-                                                <input type="text" name="price" id="price" placeholder="Precio" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="description">Descripción del producto</label>
-                                                <textarea id="description" name="description" id="description" rows="5" placeholder="Descripción" class="form-control"></textarea>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="stock">Existencias</label>
-                                                <input type="text" name="stock" id="stock" placeholder="Existencias" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <a class="btn btn-primary btn-block" href="../../admin/productos/index.html">Regresar</a>
-                                                <button type="button" class="btn btn-success btn-block">Guardar</button>
-                                            </div>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12">
+                                        <div class="form-group">
+                                            <img src="../../assets/img/productos/trozos-de-chocolate.jpg" class="img-fluid img-card" alt="adorno-pastel">
+                                        </div>
+                                        <div class="form-group">
+                                            <p><strong>Código del usuario:</strong> U00122</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p><strong>Nombre del usuario:</strong> Admin</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p><strong>Email del usuario:</strong> admin@monterollo.com.mx</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p><strong>Rol del sistema:</strong> Administrador</p>
                                         </div>
                                     </div>
-                                </form>
+                                    <div class="col-12 col-sm-12">
+                                        <div class="form-group">
+                                            <p><strong>Acciones:</strong></p>
+                                            <a class="btn btn-primary btn-block"
+                                                href="../../admin/usuarios/index.html">Regresar</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
