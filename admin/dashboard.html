@@ -118,37 +118,49 @@
             <section id="restantes" class="section-light">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-sm-6 my-3">
-                            <div class="card shadow h-100">
+                        <div class="col-12 col-sm-6">
+                            <div class="card shadow">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-12 col-sm-12">
-                                            <h2 class="text-center">Sabores restantes</h2>
+                                            <h2 class="text-center">Sabores</h2>
                                         </div>
                                         <div class="col-12 col-sm-12 mt-5">
                                             <ul class="list-group">
-                                                <li class="list-group-item">Vanilla Total: 30</li>
-                                                <li class="list-group-item">Chocolate Total: 30</li>
-                                                <li class="list-group-item">Fresa Total: 30</li>
-                                                <li class="list-group-item">Limón Total: 30</li>
+                                                <li class="list-group-item"><a href="../admin/productos/show-sabor-vanilla.html">Sabor:
+                                                        Vanilla Existencias: 30</a></li>
+                                                <li class="list-group-item"><a href="../admin/productos/show-sabor-chocolate.html">Sabor:
+                                                        Chocolate Existencias: 30</a>
+                                                </li>
+                                                <li class="list-group-item"><a href="../admin/productos/show-sabor-fresa.html">Sabor:
+                                                        Fresa Existencias: 30</a>
+                                                </li>
+                                                <li class="list-group-item"><a href="../admin/productos/show-sabor-durazno.html">Sabor:
+                                                        Vanilla Existencias: 30</a>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 my-3">
-                            <div class="card shadow h-100">
+                        <div class="col-12 col-sm-6">
+                            <div class="card shadow">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-12 col-sm-12">
                                             <h2 class="text-center">Adornos restantes</h2>
+                                        </div>
                                         <div class="col-12 col-sm-12 mt-5">
                                             <ul class="list-group">
-                                                <li class="list-group-item">Trozos de chocolate Total: 30</li>
-                                                <li class="list-group-item">Trozos de mango Total: 30</li>
-                                                <li class="list-group-item">Trozos de fresa Total: 30</li>
-                                                <li class="list-group-item">Trozos de durazno Total: 30</li>
+                                                <li class="list-group-item"><a href="../admin/productos/show-trozos-chocolate.html">Adorno: Trozos de chocolate
+                                                        Existencias: 30</a></li>
+                                                <li class="list-group-item"><a href="../admin/productos/show-trozos-mango.html">Adorno:
+                                                        Trozos de mango Existencias: 30</a></li>
+                                                <li class="list-group-item"><a href="../admin/productos/show-trozos-fresa.html">Adorno:
+                                                        Trozos de fresa Existencias: 30</a></li>
+                                                <li class="list-group-item"><a href="../admin/productos/show-trozos-durazno.html">Adorno:
+                                                        Trozos de fresa Existencias: 30</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -167,30 +179,38 @@
                                     <h2 class="text-center">Tabla de pedidos</h2>
                                 </div>
                                 <div class="col-12 col-sm-12 mt-5">
-                                    <table id="pedidos" class="table table-hover text-nowrap table-bordered">
+                                    <table id="tablaDashboard" class="table table-hover text-nowrap table-bordered">
                                         <thead>
                                             <tr>
-                                                <th>Código</th>
+                                                <th>Código del pedido</th>
                                                 <th>Nombre del cliente</th>
-                                                <th>Total</th>
+                                                <th>Total del pedido</th>
                                                 <th>Acciones</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td data-label="Código">
-                                                    <p class="mt-2">P00121</p>
+                                                    <p class="mt-2">P00122</p>
                                                 </td>
                                                 <td data-label="Nombre del cliente">
-                                                    <p class="mt-2">Gerardo Cabrera</p>
+                                                    <p class="mt-2">Gerardo Rafael Cabrera Herrera</p>
                                                 </td>
                                                 <td data-label="Total">
                                                     <p class="mt-2">$200.00</p>
                                                 </td>
                                                 <td data-label="Acciones">
-                                                    <a href="../admin/pedidos/show.html" class="btn btn-success mt-2">Ver</a>
-                                                    <a href="../admin/pedidos/edit.html" class="btn btn-warning mt-2">Editar</a>
-                                                    <a href="#" class="btn btn-danger mt-2">Eliminar</a>
+                                                    <div class="form-group d-flex align-items-sm-center flex-sm-row flex-column mt-2">
+                                                        <div class="p-1">
+                                                            <a class="btn btn-primary" href="../admin/pedidos/show.html">Ver</a>
+                                                        </div>
+                                                        <div class="p-1">
+                                                            <a class="btn btn-warning" href="../admin/pedidos/edit.html">Editar</a>
+                                                        </div>
+                                                        <div class="p-1">
+                                                            <a class="btn btn-danger" href="#">Eliminar</a>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>
